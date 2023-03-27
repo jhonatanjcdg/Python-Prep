@@ -258,20 +258,27 @@ print('Cantidad de ciclos: ' + str(ciclos_con_break))
 print('Se optimizó a un ' + str(ciclos_con_break/ciclos_sin_break) + '% de ciclos aplicando break')
 
 
-# 13) Aplicando continue, armar un ciclo while que solo imprima los valores divisibles por 12, dentro del rango de números de 100 a 300
+# 13) Aplicando continue, armar un ciclo while que solo imprima los valores divisibles por 12,
+# dentro del rango de números de 100 a 300
 
 # In[62]:
-
+n=100
+while(n<=300):
+    n+=1
+    if(n%12 != 0):
+        continue
+    print("El número",n,"Es divisible por 12")
 
 n = 99
 while(n <= 300):
     n += 1
     if (n % 12 != 0):
         continue
-    print(n, ' es divisible por 12')
+    print(n, 'es divisible por 12')
 
 
-# 14) Utilizar la función **input()** que permite hacer ingresos por teclado, para encontrar números primos y dar la opción al usario de buscar el siguiente
+# 14) Utilizar la función **input()** que permite hacer ingresos por teclado,
+# para encontrar números primos y dar la opción al usario de buscar el siguiente
 
 # In[73]:
 
