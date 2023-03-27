@@ -1,13 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # ## Flujos de Control
 
-# 1) Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla si es mayor o menor a cero
+# 1) Crear una variable que contenga un elemento del conjunto de números enteros y 
+# luego imprimir por pantalla si es mayor o menor a cero
 
 # In[4]:
-
-
 a = 10
 if (a < 0):
     print('La variable es menor a cero')
@@ -20,8 +16,6 @@ else:
 # 2) Crear dos variables y un condicional que informe si son del mismo tipo de dato
 
 # In[5]:
-
-
 a = 2
 b = 'hola'
 if (type(a) == type(b)):
@@ -33,7 +27,11 @@ else:
 # 3) Para los valores enteros del 1 al 20, imprimir por pantalla si es par o impar
 
 # In[7]:
-
+for n in range(1,21):
+    if(n%2 == 0):
+        print("El número",n,"es par")
+    else:
+        print("El número",n,"es impar")
 
 for i in range(1, 21):
     if i % 2 == 0:
@@ -45,6 +43,8 @@ for i in range(1, 21):
 # 4) En un ciclo for mostrar para los valores entre 0 y 5 el resultado de elevarlo a la potencia igual a 3
 
 # In[9]:
+for n in range(0,6):
+    print(n**3)
 
 
 for i in range(0, 6):
@@ -54,6 +54,10 @@ for i in range(0, 6):
 # 5) Crear una variable que contenga un número entero y realizar un ciclo for la misma cantidad de ciclos
 
 # In[10]:
+n=5
+for m in range(0,n):
+    a=1
+print(m)
 
 
 n = 12
@@ -62,9 +66,17 @@ for i in range(0, n):
 print(i)
 
 
-# 6) Utilizar un ciclo while para realizar el factoreo de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
+# 6) Utilizar un ciclo while para realizar el factoreo de un número guardado en una variable,
+# sólo si la variable contiene un número entero mayor a 0
 
 # In[33]:
+m=5
+if(type(m) == type(1) and m > 0):
+    n=m-1
+    while(n > 0):
+        m *= n
+        n-=1
+print(m)
 
 
 n = 5
@@ -85,6 +97,9 @@ else:
 # 7) Crear un ciclo for dentro de un ciclo while
 
 # In[38]:
+while(True):
+    for n in range(0,3):
+        pass
 
 
 n = 0
@@ -111,6 +126,18 @@ for i in range(1, n):
 # 9) Imprimir los números primos existentes entre 0 y 30
 
 # In[54]:
+primo = True
+for n in range(30,0):
+    cont = 0
+    m = n
+    while(n > 1):
+        if(n%m == 0):
+            primo = False
+        n-=1
+    if(primo):
+        print(m)
+    else:
+        primo=True
 
 
 tope_rango=30
