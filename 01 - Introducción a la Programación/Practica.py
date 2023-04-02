@@ -1,7 +1,9 @@
 #print('Hola Mundo!222')
 # 1. Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla
-x=1
+x="Jhonatan"
 print(x)
+f = [i for i in range(0,10) if i%2 == 0]
+print(f)
 # 2. Imprimir el tipo de dato de la constante 8.5
 print(type(8.5))
 # 3. Imprimir el tipo de dato de la variable creada en el punto 1
@@ -59,3 +61,4 @@ a -= 3
 print(a)
 
 print(1<<3)
+
